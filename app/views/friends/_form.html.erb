@@ -11,27 +11,25 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+  <div class="mb-3">
+    <label for="first_name_input" class="form-label"><%= form.label :first_name, style: "display: block" %></label>
+    <%= form.text_field :first_name, class: 'form-control' %>
   </div>
 
-  <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
+  <div class="mb-3">
+    <label for="last_name_input" class="form-label"><%= form.label :last_name, style: "display: block" %></label>
+    <%= form.text_field :last_name, class: 'form-control' %>
   </div>
 
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+  <div class="mb-3">
+    <label for="email_input" class="form-label"><%= form.label :email, style: "display: block" %></label>
+    <%= form.text_field :last_name, class: 'form-control' %>
   </div>
 
-  <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
+  <div class="mb-3">
+    <label for="phone_input" class="form-label"><%= form.label :phone, style: "display: block" %></label>
+    <%= form.text_field :phone, class: 'form-control' %>
   </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
+  <%= form.submit class: 'btn btn-success' %>
 <% end %>
