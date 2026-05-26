@@ -12,23 +12,19 @@
   <% end %>
 
   <div class="mb-3">
-    <label for="first_name_input" class="form-label"><%= form.label :first_name, style: "display: block" %></label>
-    <%= form.text_field :first_name, class: 'form-control' %>
+    <%= form.text_field :first_name, class: 'form-control', placeholder: 'First name' %>
   </div>
 
   <div class="mb-3">
-    <label for="last_name_input" class="form-label"><%= form.label :last_name, style: "display: block" %></label>
-    <%= form.text_field :last_name, class: 'form-control' %>
+    <%= form.text_field :last_name, class: 'form-control', placeholder: 'Last name' %>
   </div>
 
   <div class="mb-3">
-    <label for="email_input" class="form-label"><%= form.label :email, style: "display: block" %></label>
-    <%= form.text_field :last_name, class: 'form-control' %>
+    <%= form.text_field :last_name, class: 'form-control', placeholder: 'Email' %>
   </div>
 
   <div class="mb-3">
-    <label for="phone_input" class="form-label"><%= form.label :phone, style: "display: block" %></label>
-    <%= form.text_field :phone, class: 'form-control' %>
+    <%= form.text_field :phone, class: 'form-control', placeholder: 'Phone number' %>
   </div>
 
   <%= form.submit class: 'btn btn-success' %>

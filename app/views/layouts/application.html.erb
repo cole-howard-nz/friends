@@ -30,6 +30,10 @@
     <%= render 'partials/header' %>
 
     <section style='margin: 2em;'>
+      <% if notice %>
+        <%= render 'partials/alert' %>
+      <% end %>
+
       <%= yield %>
     </section>
   </body>
